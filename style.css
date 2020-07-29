@@ -90,6 +90,7 @@ section {
   justify-content: center;
   align-items: center;
   padding: 0px 100px;
+  margin-bottom: 100px;
   overflow: hidden;
 }
 
@@ -111,7 +112,6 @@ section .text h2 {
 section .text p {
   font-size: 24px;
   font-weight: 300;
-  width: 80%;
   opacity: 0.5;
 }
 
@@ -187,17 +187,17 @@ header ul li {
 
 @media screen and (max-width: 1000px) {
   section {
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    text-align: center;
   }
-  .section-shield .animation div {
-    height: 100%;
-    position: absolute;
+  .section-shield .animation {
+    /* height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     display: flex;
     transform: translate(-50%, -50%);
-    width: 153%;
+    width: 153%; */
   }
 }
