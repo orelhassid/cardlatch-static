@@ -165,11 +165,23 @@ header .logo {
 header .logo img {
   margin-right: 10px;
 }
-header ul {
+.navbar {
   display: flex;
 }
-header ul li {
-  margin: 0 7px;
+.navbar li {
+  margin: 0 15px;
+  display: flex;
+}
+.navbar img {
+  width: 24px;
+  margin-right: 5px;
+}
+.navbar a {
+  display: flex;
+  align-items: center;
+}
+.navbar li a:hover {
+  color: var(--color-2);
 }
 
 /* Components */
