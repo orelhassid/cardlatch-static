@@ -48,12 +48,15 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
-  min-width: 1920px;
+  /* width: 90%;
+  min-width: 1920px; */
+  height: 150vh;
+  width: 150vw;
 }
 
 .section-shield .animation div {
   width: 90%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -90,11 +93,12 @@ section {
   overflow: hidden;
 }
 
-section:nth-child(odd) {
-  background-color: var(--background-3);
+section:nth-child(even) {
+  /* background-color: var(--background-3); */
+  direction: rtl;
 }
 section.section-overnight {
-  background: linear-gradient(180deg, #17253e 16%, #17253e) !important;
+  background: linear-gradient(180deg, #17253e 16%, #17253e);
   /* background: red; */
 }
 section .text h2 {
