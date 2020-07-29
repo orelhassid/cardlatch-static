@@ -15,6 +15,7 @@
 
     <!--  Styles  -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="navigation.css" />
     <link rel="stylesheet" href="components.css" />
   </head>
   <body>
@@ -26,27 +27,33 @@
           width="50"
         />CARDLATCH</a
       >
-      <ul class="navbar">
-        <li>
-          <a href="https://github.com/orelhassid/cardLatch-static/"
-            ><img src="./icons/github.svg" alt="github" />GitHub</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://drive.google.com/drive/folders/1yQmH0fIFEezvLe3mk9rz7HzoL1W_vqvo?usp=sharing"
-          >
-            <img src="./icons/googledrive.svg" alt="google drive" />
-            Google Drive</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.figma.com/file/HbM8OnikxwQdCFln6VAv28/Cardlatch-frontPage-animation?node-id=11%3A2"
-            ><img src="./icons/figma.svg" alt="figma" />Figma</a
-          >
-        </li>
-      </ul>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li>
+            <a href="https://github.com/orelhassid/cardLatch-static/"
+              ><img src="./icons/github.svg" alt="github" />GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/drive/folders/1yQmH0fIFEezvLe3mk9rz7HzoL1W_vqvo?usp=sharing"
+            >
+              <img src="./icons/googledrive.svg" alt="google drive" />
+              Google Drive</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.figma.com/file/HbM8OnikxwQdCFln6VAv28/Cardlatch-frontPage-animation?node-id=11%3A2"
+              ><img src="./icons/figma.svg" alt="figma" />Figma</a
+            >
+          </li>
+          <span class="menu-close" id="menu-close">&times;</span>
+        </ul>
+      </nav>
+      <span class="navbar-menu" id="menu-open">
+        <img src="./icons/menu.svg" alt="menu" class="menu-icon" />
+      </span>
     </header>
 
     <!-- Shield -->
@@ -141,5 +148,6 @@
     <script src="scripts/alerts.js"></script>
     <script src="scripts/analytics.js"></script>
     <script src="scripts/shield.js"></script>
+    <script src="scripts/menu.js"></script>
   </body>
 </html>
