@@ -4,6 +4,5 @@ var animation = bodymovin.loadAnimation({
   loop: true,
   autoplay: true,
   path: "/animation/hardware.json",
-  frameRate: 20,
 });
 // animation.setSpeed(2);
