@@ -60,15 +60,16 @@ nav ul .menu-close {
   left: 25px;
   font-size: 36px;
   margin-left: 50px;
+  display: none;
 }
 
-.navbar-menu {
+.menu-open {
   margin-left: auto;
+  visibility: hidden;
 }
 
-.menu-icon {
+.menu-open img {
   cursor: pointer;
-  visibility: hidden;
 }
 
 .navbar-open {
@@ -76,11 +77,15 @@ nav ul .menu-close {
 }
 
 @media screen and (max-width: 1000px) {
-  .menu-icon {
+  .menu-open {
     visibility: visible;
   }
+  nav ul .menu-close {
+    display: inline-block;
+    z-index: 1;
+  }
   header {
-    height: 80px;
+    height: 90px;
   }
   .navbar {
     position: fixed;
@@ -93,10 +98,12 @@ nav ul .menu-close {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    box-shadow: -4px 0 8px 2px rgba(0, 0, 0, 0.1);
   }
   .navbar ul {
     padding-top: 160px;
     flex-direction: column;
+    padding-left: 50px;
   }
   .navbar ul li {
     font-size: 2rem;

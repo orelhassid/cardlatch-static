@@ -6,7 +6,7 @@ menuButton.addEventListener("click", () => openNav());
 menuCloseBtn.addEventListener("click", () => closeNav());
 
 function openNav() {
-  nav.style.width = "350px";
+  nav.style.width = "50vw";
 }
 function closeNav() {
   nav.style.width = "0px";
