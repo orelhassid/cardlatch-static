@@ -63,10 +63,10 @@
           Flexible and powerfull system <br />
           suitable to small and large business
         </p>
-        <button class="bubbly-button">
-          <a href="https://www.cardlatch.com/" target="_blank">
-            Contact Now
-          </a>
+        <button id="btn-contact" class="bubbly-button">
+          <!-- <a href="https://www.cardlatch.com/" target="_blank"> -->
+          Contact Now
+          <!-- </a> -->
         </button>
       </div>
       <!-- Animation -->
@@ -151,5 +151,13 @@
     <script src="scripts/analytics.js"></script>
     <script src="scripts/shield.js"></script>
     <script src="scripts/menu.js"></script>
+    <script>
+      let btnContact = document.getElementById("btn-contact");
+      btnContact.addEventListener("click", () => {
+        setTimeout(() => {
+          window.location.href = "https://www.cardlatch.com/";
+        }, 1000);
+      });
+    </script>
   </body>
 </html>
