@@ -3,7 +3,7 @@ var animation = bodymovin.loadAnimation({
   renderer: "svg",
   loop: true,
   autoplay: true,
-  path: "/animation/alerts-bubbles.json",
+  path: "/animation/alert-orbit.json",
 });
 
 animation.setSpeed(0.5);
