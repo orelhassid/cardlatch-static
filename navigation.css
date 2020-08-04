@@ -54,14 +54,6 @@ nav {
 .navbar li a:hover {
   color: var(--color-2);
 }
-nav ul .menu-close {
-  position: absolute;
-  top: 0;
-  left: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-  display: none;
-}
 
 .menu-open {
   margin-left: auto;
@@ -75,14 +67,13 @@ nav ul .menu-close {
 .navbar-open {
   width: 250px;
 }
+.menu-close {
+  display: none;
+}
 
 @media screen and (max-width: 1000px) {
   .menu-open {
     visibility: visible;
-  }
-  nav ul .menu-close {
-    display: inline-block;
-    z-index: 1;
   }
   header {
     height: 90px;
@@ -103,13 +94,29 @@ nav ul .menu-close {
   .navbar ul {
     padding-top: 160px;
     flex-direction: column;
-    padding-left: 50px;
+    width: 100%;
   }
   .navbar ul li {
     font-size: 2rem;
-    margin: 0 15px;
     font-weight: 200;
     margin-bottom: 20px;
-    margin-left: 10px;
+    width: 100%;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  }
+  .navbar ul li img {
+    margin-right: 20px;
+  }
+
+  nav ul .menu-close {
+    display: inline-block;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-size: 36px;
   }
 }
